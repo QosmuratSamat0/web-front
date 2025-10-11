@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Wanderlust Adventures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mountain me-2"></i>Wanderlust Adventures
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold text-white">Gallery</h1>
+                    <p class="lead text-white">Capturing moments from around the world</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="btn-group" role="group" aria-label="Gallery filter">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="mountains">Mountains</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="beaches">Beaches</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="cities">Cities</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="nature">Nature</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-3" id="gallery-grid">
+                <!-- Mountain Images -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="mountains">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Swiss Alps">
+                        <div class="gallery-overlay">
+                            <h5>Swiss Alps</h5>
+                            <p>Breathtaking mountain views</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="mountains">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1464822759844-d150baec0b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Himalayas">
+                        <div class="gallery-overlay">
+                            <h5>Himalayas</h5>
+                            <p>Majestic peaks of Nepal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="mountains">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="New Zealand Mountains">
+                        <div class="gallery-overlay">
+                            <h5>New Zealand</h5>
+                            <p>Dramatic landscapes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beach Images -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="beaches">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Maldives Beach">
+                        <div class="gallery-overlay">
+                            <h5>Maldives</h5>
+                            <p>Crystal clear waters</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="beaches">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Santorini">
+                        <div class="gallery-overlay">
+                            <h5>Santorini</h5>
+                            <p>Greek island paradise</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="beaches">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Tropical Beach">
+                        <div class="gallery-overlay">
+                            <h5>Tropical Paradise</h5>
+                            <p>Pristine white sand</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- City Images -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="cities">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Tokyo">
+                        <div class="gallery-overlay">
+                            <h5>Tokyo</h5>
+                            <p>Modern metropolis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="cities">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Paris">
+                        <div class="gallery-overlay">
+                            <h5>Paris</h5>
+                            <p>City of lights</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="cities">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="New York">
+                        <div class="gallery-overlay">
+                            <h5>New York</h5>
+                            <p>The big apple</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature Images -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="nature">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Iceland Aurora">
+                        <div class="gallery-overlay">
+                            <h5>Iceland</h5>
+                            <p>Northern Lights</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="nature">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Forest">
+                        <div class="gallery-overlay">
+                            <h5>Forest Trail</h5>
+                            <p>Peaceful nature walk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="nature">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded" alt="Waterfall">
+                        <div class="gallery-overlay">
+                            <h5>Waterfall</h5>
+                            <p>Natural beauty</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Stories Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Travel Stories</h2>
+                    <p class="lead text-muted">Read about amazing adventures from our travelers</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Mountain Adventure">
+                        <div class="card-body">
+                            <h5 class="card-title">Conquering the Swiss Alps</h5>
+                            <p class="card-text">Sarah shares her incredible journey hiking through the Swiss Alps and the life-changing experience of reaching the summit.</p>
+                            <small class="text-muted">By Sarah Johnson • 3 days ago</small>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Beach Paradise">
+                        <div class="card-body">
+                            <h5 class="card-title">Paradise Found in Maldives</h5>
+                            <p class="card-text">Mike recounts his relaxing escape to the Maldives and the unforgettable underwater adventures he experienced.</p>
+                            <small class="text-muted">By Mike Chen • 1 week ago</small>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="City Exploration">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo's Hidden Gems</h5>
+                            <p class="card-text">Emma discovers the traditional side of Tokyo beyond the neon lights and shares her favorite local spots.</p>
+                            <small class="text-muted">By Emma Rodriguez • 2 weeks ago</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <h5>Wanderlust Adventures</h5>
+                    <p>Your gateway to extraordinary travel experiences around the world.</p>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="destinations.html" class="text-white-50">Destinations</a></li>
+                        <li><a href="gallery.html" class="text-white-50">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white-50"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Wanderlust Adventures. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('[data-filter]');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
